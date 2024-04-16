@@ -41,9 +41,13 @@ document.addEventListener('DOMContentLoaded', function () {
             if (value === '') {
                 isValid = false;
                 errorMessage.textContent = 'Please fill in all required fields.';
+            } else if (!/^\d+$/.test(value)) {
+                isValid = false;
+                errorMessage.textContent = 'Please enter a valid number.';
             } else {
                 hideErrorIcon(input); 
             }
+
         });
 
         const selectedAge = ageSelect.value;
