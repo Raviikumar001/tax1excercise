@@ -1,0 +1,35 @@
+.custom-tooltip {
+    --bs-tooltip-bg: #7e0aeb; /* Violet background color */
+    --bs-tooltip-color: #ffffff; /* White text color */
+}
+
+.custom-form-width {
+    max-width: 700px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.error-icon {
+    display: none; /* Initially hide the error icon */
+    color: red; /* Color of the error icon */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 1.25em; /* Adjust icon size */
+    z-index: 2;
+}
+
+/* Optional styles to adjust the position of the error icon */
+.top-50 {
+    top: 50%; /* Align the icon vertically */
+}
+
+.translate-middle-y {
+    transform: translateY(-50%); /* Center the icon vertically */
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem #fff;
+} 
