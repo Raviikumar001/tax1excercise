@@ -188,6 +188,23 @@ describe('calculate Tax income', () => {
 
     })
 
+    it('submit income field with 0(zero)', ()=> {
+
+        cy.contains('Tax Calculator');
+        cy.get('[data-test=annual-income-input]').type(0).should('be.visible');
+
+        cy.get('[data-test="extra-income-input"]').type(taxFixture.form.extraIncomeField).should('be.visible');
+
+        cy.get('#age').select(taxFixture.form.selectInputField).should('have.value', taxFixture.form.selectInputField);
+
+     
+        cy.get('[data-test="deductions-input"]').type(taxFixture.form.deductionsInputField).should('be.visible');
+        cy.get('[data-test=submit-form-button]').should('not.be.disabled').should('be.visible').click();
+      
+        cy.get('[data-test=error-form-text]').should('be.visible').contains('Income field cannot have value of 0.')
+
+    })
+
    
 
 
