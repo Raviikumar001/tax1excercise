@@ -1,0 +1,24 @@
+{
+    "selectInputValues": ["",
+      "<40",
+      "≥ 40 & < 60",
+      "≥ 60"
+    ],
+
+    "form": {"incorrectInput":"990c",
+        "annualIncomeField": 900000,
+        "extraIncomeField": 99000,
+        "selectInputField": "<40",
+        "deductionsInputField": 9000,"taxPaid": 57000,"incomeAfterTax": 933000
+
+    },
+
+    "form2": {
+        "annualIncomeField": 200000,
+        "extraIncomeField": 90000,
+        "selectInputField": "<40",
+        "deductionsInputField": 0,"taxPaid": 0,"incomeAfterTax": 290000
+
+    }
+
+  }
