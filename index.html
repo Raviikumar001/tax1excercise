@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container" data-test="form-container">
       <h1 class="text-center mt-5">Tax Calculator</h1>                                
-      <form class="row g-3 mt-5 p-4 border custom-form-width rounded-2">                                                                            
+      <form data-test="form-container" class="row g-3 mt-5 p-4 border custom-form-width rounded-2">                                                                            
         <div class="col-md-12">
           <label for="grossIncome" class="form-label">Enter gross annual income</label>
           <!-- <i class="bi bi-exclamation-circle "></i> -->
           <i 
+          data-test="annual-income-label-tooltip"
           data-bs-toggle="tooltip" data-bs-placement="top"
           data-bs-custom-class="custom-tooltip"
           data-bs-title="Gross annual income is your total salary in a year before any deductions"
@@ -29,10 +30,10 @@
           class="bi bi-question-circle"></i>  
       
           <div class="input-group mb-3">
-            <input type="text" class="form-control number-input" id="grossIncome" placeholder="Enter gross annual income" />
+            <input type="text" class="form-control number-input" id="grossIncome" data-test="annual-income-input" placeholder="Enter gross annual income" />
             <span class="input-group-text error-icon custom-tooltip">
               <i
-              
+              data-test="annual-income-input-tooltip"
               data-bs-toggle="tooltip" data-bs-placement="right" 
               data-bs-custom-class="custom-tooltip"
               title="Please enter a valid number."
@@ -47,20 +48,21 @@
           
         </div>
 
-        <div class="col-md-12">
+        <div data-test="extra-income-container" class="col-md-12">
           <label for="extraIncome" class="form-label">Enter extra income</label>
           <!-- <i class="bi bi-exclamation-circle "></i> -->
           <i 
+          data-test="extra-income-label-tooltip"
           data-bs-toggle="tooltip" data-bs-placement="top"
           data-bs-custom-class="custom-tooltip"
           data-bs-title="Extra income refers to additional earnings from sources other than your salary, such as bonuses, investments, etc."
           class="bi bi-question-circle"></i>
 
           <div class="input-group mb-3">
-            <input type="text" class="form-control number-input" id="extraIncome" placeholder="Enter extra income from other sources" />
+            <input type="text" class="form-control number-input" id="extraIncome" data-test="extra-income-input" placeholder="Enter extra income from other sources" />
             <span class="input-group-text error-icon custom-tooltip">
               <i
-              
+              data-test="extra-income-input-tooltip"
               data-bs-toggle="tooltip" data-bs-placement="right" 
               data-bs-custom-class="custom-tooltip"
               title="Please enter a valid number."
@@ -73,6 +75,7 @@
         <div class="col-md-12">
           <label for="age" class="form-label">Enter age group</label>
           <i 
+          data-test="select-label-tooltip"
           data-bs-toggle="tooltip" data-bs-placement="top"
           data-bs-custom-class="custom-tooltip"
           data-bs-title="Age group determines the tax rate based on your age bracket."
@@ -90,22 +93,23 @@
               ≥ 60
             </option>
           </select>
-          <div class="select-error-message text-danger mt-2"></div>
+          <div data-test="select-input-error"  class="select-error-message text-danger mt-2"></div>
         </div>
 
         <div class="col-md-12">
           <label for="deductions" class="form-label">Enter total applicable deductions</label>
           <i 
+          data-test="deductions-label-tooltip"
           data-bs-toggle="tooltip" data-bs-placement="top"
           data-bs-custom-class="custom-tooltip"
           data-bs-title="Total applicable deductions are the deductions allowed by tax laws that can reduce your taxable income."
           class="bi bi-question-circle"></i>
 
           <div class="input-group mb-3">
-            <input type="text" class="form-control number-input" id="deductions" placeholder="Add total applicable deductions" />
+            <input type="text" class="form-control number-input" id="deductions" data-test="deductions-input" placeholder="Add total applicable deductions" />
             <span class="input-group-text error-icon custom-tooltip">
               <i
-              
+              data-test="extra-deductions-input-tooltip"
               data-bs-toggle="tooltip" data-bs-placement="right" 
               data-bs-custom-class="custom-tooltip"
               title="Please enter a valid number."
@@ -118,15 +122,18 @@
         </div>
 
 
+
+
         <div class="d-grid mx-auto">
             <button class="btn btn-primary"
+            data-test="submit-form-button"
             
             id="submit" 
             type="submit">Submit</button>
          
           </div>
 
-          <div class="error-message text-danger mt-2"></div>
+          <div data-test="error-form-text" class="error-message text-danger mt-2"></div>
 
       
       </form>
@@ -144,7 +151,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div data-test="modal-result-container" class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Tax Calculation</h5>
             <button
@@ -181,7 +188,6 @@
    </script>
 </body>
 </html>
-
 
 
 
