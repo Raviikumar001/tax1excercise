@@ -1,8 +1,12 @@
 # tax1excercise
 
+Production live link: https://tax1excercise.vercel.app
 
-
-
+to run tests locally: 
+```
+cd test
+npm install
+```
 
 Tests screenshot
 
