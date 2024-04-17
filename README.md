@@ -1,17 +1,26 @@
 # tax1excercise
 
 Production live link: https://tax1excercise.vercel.app
-Test as run with cypress, Node should be installed for that to run.
-to run tests locally: 
-Inside the test folder the cypress config file contains the base URL, which is local host,
-be sure to run the index.html on local host or the production live link
+
+Tests as run with cypress, Node should be installed for that to run.
+
+To run tests locally: 
+
+Inside the test folder, the cypress config file contains the base URL which is used for testing, I have set it to the production link,
+
+if you're running the project locally, do include the localhost URL instead of the production url. 
 
 ```
 cd test
 npm install
 npx cypress open
 ```
+project screenshot
+
+![image](https://github.com/Raviikumar001/tax1excercise/assets/52815192/65f794f4-ee35-414b-b144-94118beb8206)
+
+
 
 Tests screenshot
+![image](https://github.com/Raviikumar001/tax1excercise/assets/52815192/7d3b5852-52dd-4b29-965b-b314abb67edf)
 
-![image](https://github.com/Raviikumar001/tax1excercise/assets/52815192/f78f42ee-b08d-4af4-8c81-63a0db98976c)
