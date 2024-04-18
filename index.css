@@ -1,11 +1,11 @@
 .custom-tooltip {
-    --bs-tooltip-bg: #7e0aeb; /* Violet background color */
-    --bs-tooltip-color: #ffffff; /* White text color */
+    --bs-tooltip-bg: #7e0aeb; 
+    --bs-tooltip-color: #ffffff;
 }
 
 .custom-form-width {
-    max-width: 700px; /* Adjust this value as needed */
-    margin: 0 auto; /* Center the form horizontally */
+    max-width: 700px;
+    margin: 0 auto; 
 }
 
 .position-relative {
@@ -13,20 +13,20 @@
 }
 
 .error-icon {
-    display: none; /* Initially hide the error icon */
-    color: red; /* Color of the error icon */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 1.25em; /* Adjust icon size */
+    display: none;
+    color: red; 
+    cursor: pointer; 
+    font-size: 1.25em; 
     z-index: 2;
 }
 
-/* Optional styles to adjust the position of the error icon */
+
 .top-50 {
-    top: 50%; /* Align the icon vertically */
+    top: 50%; 
 }
 
 .translate-middle-y {
-    transform: translateY(-50%); /* Center the icon vertically */
+    transform: translateY(-50%); 
 }
 
 .form-control:focus {
