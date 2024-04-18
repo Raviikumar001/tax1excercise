@@ -8,7 +8,7 @@ To run tests locally:
 
 Inside the test folder, the cypress config file contains the base URL which is used for testing, I have set it to the production link,
 
-if you're running the project locally, do include the localhost URL instead of the production url. 
+if you're running the project locally, do include the localhost URL of the index HTML running (you'll have to run the index HTML using a server, live server in vs code can also do the job simply), instead of the production url. 
 
 ```
 cd test
